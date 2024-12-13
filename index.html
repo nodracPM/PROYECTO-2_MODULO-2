@@ -8,41 +8,48 @@
     </head>
     <body>
         <header>
-            <nav>
-                <img class="logo" src="" alt="Logo de Netflix" aria-label="Logo de Netflix">
+            <div class="hero-img"> </div>
+            <nav class="nav-bar">
+                <img class="logo" src="/imgs/netflix_logo.png" alt="Logo de Netflix" aria-label="Logo de Netflix">
                 <ul class="nav-menu">
-                    <li><a href="#" class="language-button">Español</a></li>
+                    <li>
+                        <select class="language-select">
+                            <option value="Español">Español</option>
+                            <option value="English">English</option>
+                        </select>
+                    </li>
                     <li><a href="#" class="log-in-button">Inciar sesión</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
+
             <section class="hero">
-                <h1>Películas y series imlimitadas y mucho más</h1>
+                <h1>Películas y series ilimitadas y mucho más</h1>
                 <p>A partir de $119. Cancela cuando quieras.</p>
             </section>
-
+            
             <section class="join-now">
-                <p>¿Quieres unirte ya? Ingresa tu email para crear una cuenta 
+                <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta 
                     o reiniciar tu membresía de Netflix.
                 </p>
-                <form>
+                <form class="join-now-form">
                     <input type="email" placeholder="Email" class="email-search-bar">
-                    <button type="submit" class="join-now-button">Unirte ahora ></button>
+                    <button type="submit" class="join-now-button">Comenzar ></button>
                 </form>
             </section>
+        </header>
+        <main>
 
             <section class="more-info">
                 <div class="more-info-text-container">
                     <h3>Todo lo que te encanta de Netflix por tan solo 119$.</h3>
-                    <p>Ahorra viendo Netflix con algunas pausas publicitarias.</p>
+                    <p>Aprovecha nuestra opción más accesible, el plan con anuncios.</p>
                 </div>
-                <button class="more-info-button">más info</button>
+                <button class="more-info-button">Más info</button>
             </section>
 
             <section class="tendencies">
+                <h2>Tendencias</h2>
                 <nav class="tendencies-nav">
-                    <h2>Tendencias</h2>
                     <select name="Location" class="tendencies-select" id="Location">
                         <option value="México">México</option>
                         <option value="Global">Global</option>
@@ -55,61 +62,61 @@
                 <div class="tendencies-cards-container">
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">1</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">2</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">3</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">4</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">5</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">6</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">7</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">8</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">9</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
 
                     <div class="tendency-card">
                         <h3 class="tendency-card-num">10</h3>
-                        <img class="tendency-card-img" src="https://picsum.photos/120/220" alt="imagen de la película o serie"
+                        <img class="tendency-card-img" src="https://picsum.photos/200/300" alt="imagen de la película o serie"
                          aria-label="imágen de la serie o película">
                     </div>
                 </div>
@@ -187,7 +194,7 @@
                     <li><a href="#">Avisos legales</a></li>
                     <li><a href="#">Solo en Netflix</a></li>
                 </ul>
-                <select>
+                <select class="language-select">
                     <option value="Español">Español</option>
                     <option value="English">English</option>
                 </select>
