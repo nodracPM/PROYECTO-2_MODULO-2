@@ -20,6 +20,7 @@
 *{
     margin: 0; 
     padding: 0; 
+    box-sizing: border-box;
 }
 
 body{
@@ -67,7 +68,6 @@ body{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 
 
@@ -404,7 +404,7 @@ h2{
 .reason{
     padding: 2rem;
     width: 15rem; 
-    height: 17rem;
+    height: 20rem;
     border-radius: 20px; 
     
     background: linear-gradient(to right, var(--third-color), var(--fourth-color));
@@ -473,4 +473,101 @@ footer{
 
 .footer-content p{
     margin: 1rem 0;
+}
+
+@media screen and (max-width: 1275px) {
+    .header-container{
+        height: 40rem;
+    }
+
+    .hero{
+        margin-top: 5rem;
+    }
+
+    .hero-img{
+        height: 40rem;
+    }
+
+    .nav-bar{
+        justify-content: space-around;
+    }
+    .logo{
+        margin: 0; 
+        width: 100px; 
+    }
+    .nav-menu{
+        margin: 0; 
+
+        justify-content: flex-end;
+        flex-wrap: wrap; 
+    }
+
+    .hero{
+        width: 80%;
+    }
+
+    .join-now p{
+        margin: auto; 
+        width: 80%;
+    }
+
+    .log-in-button{
+        padding: 0.7rem 0.8rem;  
+    }
+
+    .language-select-wrapper{
+        width: 5rem; 
+    }
+
+    .language-select{
+        padding: 0.7rem 1rem; 
+    }
+
+    .join-now{
+        width: 100%;
+    }
+
+    .join-now-form{
+        margin: 1rem 2rem; 
+        flex-wrap: wrap; 
+    }
+
+    .join-now-button{   
+        font-size: 1rem;
+
+    }
+
+    .email-search-bar{
+        width: 2.5rem; 
+        font-size: 1rem;
+    }
+
+    .more-info{
+        width: 80%;
+    }
+
+    .tendencies{
+        width: 80%;
+    }
+
+    .more-reasons-to-join{
+        width: 80%;
+    }
+
+    .reasons-container{
+        flex-direction: column;
+    }
+
+    .reason{
+        width: 100%;
+        height: auto; 
+    }
+
+    .frequently-asked-questions{
+        width: 80%;
+    }
+
+    footer{
+        width: 80%;
+    }
 }
