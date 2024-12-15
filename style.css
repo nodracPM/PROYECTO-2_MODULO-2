@@ -4,6 +4,7 @@
     --third-color: #1a2044; 
     --fourth-color: #220e17; 
     --fifth-color: #57607d;
+    --sixth-color: #2d2d2d; 
     --emphasis-color1: #c11119;
     --emphasis-color2: #414141; 
     --background-color: #050302; 
@@ -150,7 +151,9 @@ h1{
 }
 
 .join-now{
+    margin: 0rem auto; 
     width: 40%;
+
     
     font-size: 1.2rem; 
     text-align: center;
@@ -240,7 +243,7 @@ h1{
 }
 
 .tendencies{
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     width: 60%;
 
     display: flex; 
@@ -249,8 +252,7 @@ h1{
 }
 
 h2{
-    margin: 1.5rem 0; 
-
+    margin: 1rem 0; 
     font-size: 2rem; 
 }
 
@@ -294,16 +296,17 @@ h2{
 }
 
 .more-reasons-to-join{
-    margin: 1.5rem auto;
+    margin: 3rem auto;
     width: 60%; 
 }
 
 .reasons-container{
+    
     display: flex; 
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-
+    
 }
 
 .reason{
@@ -311,12 +314,59 @@ h2{
     width: 15rem; 
     height: 17rem;
     border-radius: 20px; 
-
+    
     background: linear-gradient(to right, var(--third-color), var(--fourth-color));
 }
 
 .reason p{
     margin: 1rem 0; 
-
+    
     color: var(--font-color3)
+}
+
+.frequently-asked-questions{
+    margin: 1.5rem auto;
+    margin-bottom: 4rem;
+    width: 60%;
+}
+
+.question-container{
+    margin: 0.5rem auto; 
+    padding: 1.2rem; 
+    width: 100%;
+
+    background-color: var(--sixth-color);
+}
+
+.question-container h3{
+    font-size: 1.5rem; 
+    font-weight: normal;
+}
+
+footer{
+    margin: 6rem auto; 
+    width: 60%;
+
+    color: var(--font-color3);
+}
+
+.footer-content{
+    font-size: 0.8rem;
+}
+
+.footer-links{
+    margin: 1rem auto;
+
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    height: 9.5rem; 
+    flex-wrap: wrap; 
+    gap: 0.5rem;
+
+    list-style: none;
+}
+
+.footer-link{
+    color: var(--font-color3);
 }
