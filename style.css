@@ -478,12 +478,12 @@ footer{
 @media screen and (max-width: 1275px) {
     .header-container{
         width: 100%;
-        height: 50rem;
+        height: 40rem;
     }
 
     .header-content{
         width: 100%;
-        height: 50rem;
+        height: 40rem;
     }
 
     .hero{
@@ -491,7 +491,7 @@ footer{
     }
 
     .hero-img{
-        height: 50rem;
+        height: 40rem;
     }
 
     .nav-bar{
