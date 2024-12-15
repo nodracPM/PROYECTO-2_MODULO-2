@@ -29,8 +29,6 @@ body{
     background-color: var(--background-color); 
 }
 
-header{
-}
 
 .hero-img{
     width: 100%;
@@ -45,19 +43,6 @@ header{
     background-size: cover; 
     background-repeat: no-repeat; 
     opacity: 0.5;
-
-    /*width: 100%;
-    height: 52rem; 
-    
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    z-index: -1000; 
-    
-    background-image: url(./imgs/hero-img.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    opacity: 0.5;*/
 }
 
 .header-container{
@@ -116,9 +101,81 @@ header{
 }
 
 .language-select{
-    /*margin: 2rem; 
-    margin-right: 0.5rem; 
-    padding: 100rem;*/
+    appearance: none;
+    width: 100%;
+    height: auto;
+
+    padding: 0.7rem 1.5rem; 
+    border-radius: 5px;
+
+    color: var(--font-color);   
+
+    background-color: var(--background-color);
+
+    
+    overflow-x: visible; 
+    overflow-y: visible; 
+    text-wrap-mode: nowrap;
+    white-space-collapse: preserve;  
+}
+
+.language-select:focus{
+    outline: none; 
+}
+
+.language-select-wrapper{
+    position: relative;
+    width: 8rem;
+}
+
+.language-select-wrapper::after{
+    content: "▼"; /* Unicode for down arrow */
+    position: absolute;
+    right: 10px; /* Adjust distance from the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Arrow color */
+    pointer-events: none; /* Prevent interaction with the pseudo-element */
+    font-size: 0.7rem; /* Adjust arrow size */
+}
+
+.tendencies-select{
+    appearance: none;
+    width: 100%;
+    height: auto;
+
+    padding: 0.7rem 1.5rem; 
+    border-radius: 5px;
+
+    color: var(--font-color);   
+
+    background-color: var(--background-color);
+
+    
+    overflow-x: visible; 
+    overflow-y: visible; 
+    text-wrap-mode: nowrap;
+    white-space-collapse: preserve;  
+}
+
+.tendencies-select:focus{
+    outline: none; 
+}
+
+.tendencies-select-wrapper{
+    position: relative;
+    width: 8rem;
+}
+
+.tendencies-select-wrapper::after{
+    content: "▼"; /* Unicode for down arrow */
+    position: absolute;
+    right: 10px; /* Adjust distance from the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Arrow color */
+    pointer-events: none; /* Prevent interaction with the pseudo-element */
+    font-size: 0.7rem; /* Adjust arrow size */
 }
 
 .log-in-button{
@@ -137,7 +194,6 @@ header{
 
 
 .hero{
-    margin: auto; 
     margin-top: 10rem;
     width: 35%;
 
@@ -259,6 +315,9 @@ h2{
 .tendencies-nav{
     margin: 1.5rem 0;
     width: 60%;
+
+    display: flex;
+    gap: 1rem;
 }
 
 .tendencies-cards-container{
@@ -369,4 +428,8 @@ footer{
 
 .footer-link{
     color: var(--font-color3);
+}
+
+.footer-content p{
+    margin: 1rem 0;
 }

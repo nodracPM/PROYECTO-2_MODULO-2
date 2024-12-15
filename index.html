@@ -14,10 +14,12 @@
                         <img class="logo" src="./imgs/netflix_logo.png" alt="Logo de Netflix" aria-label="Logo de Netflix">
                         <ul class="nav-menu">
                             <li>
-                                <select class="language-select">
-                                    <option value="Español">Español</option>
-                                    <option value="English">English</option>
-                                </select>
+                                <div class="language-select-wrapper">
+                                    <select class="language-select">
+                                        <option value="Español">Español</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </div>
                             </li>
                             <li><a href="#" class="log-in-button">Inciar sesión</a></li>
                         </ul>
@@ -55,14 +57,18 @@
             <section class="tendencies">
                 <h2>Tendencias</h2>
                 <nav class="tendencies-nav">
-                    <select name="Location" class="tendencies-select" id="Location">
-                        <option value="México">México</option>
-                        <option value="Global">Global</option>
-                    </select>
-                    <select name="Content" class="tendencies-select" id="Content">
-                        <option value="Series">Series</option>
-                        <option value="Peliculas">Peliculas</option>
-                    </select>
+                    <div class="tendencies-select-wrapper">
+                        <select name="Location" class="tendencies-select" id="Location">
+                            <option value="México">México</option>
+                            <option value="Global">Global</option>
+                        </select>
+                    </div>
+                    <div class="tendencies-select-wrapper">
+                        <select name="Content" class="tendencies-select" id="Content">
+                            <option value="Series">Series</option>
+                            <option value="Peliculas">Peliculas</option>
+                        </select>
+                    </div>
                 </nav>
                 <div class="tendencies-cards-container">
                     <div class="tendency-card">
@@ -209,10 +215,12 @@
                     <li><a href="#" class="footer-link">Avisos legales</a></li>
                     <li><a href="#" class="footer-link">Solo en Netflix</a></li>
                 </ul>
-                <select class="language-select">
-                    <option value="Español">Español</option>
-                    <option value="English">English</option>
-                </select>
+                <div class="language-select-wrapper">
+                    <select class="language-select">
+                        <option value="Español">Español</option>
+                        <option value="English">English</option>
+                    </select>
+                </div>
                 <p>Netflix México</p>
             </div>
         </footer>
