@@ -7,6 +7,9 @@
     --sixth-color: #2d2d2d; 
     --emphasis-color1: #c11119;
     --emphasis-color2: #414141; 
+    --emphasis-color3: #482465; 
+    --emphasis-color4: #161c51; 
+    --emphasis-color5: #373b61; 
     --background-color: #050302; 
     --font-color: #ffffff;
     --font-color2: #000000;
@@ -194,6 +197,12 @@ body{
     background-color: var(--primary-color); 
 
     cursor: pointer; 
+
+    transition: background-color 0.3s ease; 
+}
+
+.log-in-button:hover{
+    background-color: #c11119;
 }
 
 
@@ -243,10 +252,16 @@ h1{
     background-color: var(--primary-color); 
 
     cursor: pointer; 
+
+    transition: background-color 0.3s ease; 
+}
+
+.join-now-button:hover{
+    background-color: var(--emphasis-color1);
 }
 
 .email-search-bar{
-    padding: 1rem 9rem; 
+    padding: 1rem 6.5rem; 
     border: solid 1px var(--emphasis-color2); 
     border-radius: 5px;
     
@@ -274,6 +289,13 @@ h1{
     justify-content: space-between;
 
     background: linear-gradient(to right, var(--fourth-color), var(--third-color));
+
+    transition: scale 0.3s ease;
+}
+
+.more-info:hover{
+    scale: 1.02;
+    background: linear-gradient(to right, var(--emphasis-color3), var(--emphasis-color4));
 }
 
 .more-info-text-container{
@@ -301,6 +323,12 @@ h1{
     background-color: var(--fifth-color); 
 
     cursor: pointer; 
+
+    transition: background-color 0.3s ease; 
+}
+
+.more-info-button:hover{
+    background-color: var(--emphasis-color5);
 }
 
 .tendencies{
@@ -400,6 +428,14 @@ h2{
     width: 100%;
 
     background-color: var(--sixth-color);
+
+    cursor: pointer; 
+
+    transition: background-color 0.3s ease;; 
+}
+
+.question-container:hover{
+    background-color: var(--emphasis-color2);
 }
 
 .question-container h3{
